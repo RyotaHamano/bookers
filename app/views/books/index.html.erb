@@ -19,7 +19,7 @@
 <h2>New Book</h2>
 <ul>
  <% @book.errors.full_messages.each do |message| %>
- <li><%= message %></li>
+ <li>error <%= message %></li>
  <% end %>
 </ul>
 <%= form_with model: @book do |f| %>
